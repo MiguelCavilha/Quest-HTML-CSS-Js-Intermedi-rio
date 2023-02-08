@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="./src/css/reset.css">
+    <link rel="stylesheet" href="./src/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap" rel="stylesheet">
+
+    <title>Formulário</title>
+
+</head>
+<body>
+    <main>
+
+        <img class="background" src="./src/Imagem/bg-repeat.jpg" alt="imagem de fundo">
+    
+        <div class="sac">
+      <h1>Ficou com dúvida?<br>
+      Nos mande uma mensagem!</h1>
+      <p>caso tenha ficado com qualquer dúvida basta nos mandar uma mensagem e entraremos em contato em menos de 24h.</p>
+    </div>
+
+    <div class="formulario">
+        <form method="get" action="index.html">
+            <input class="valido invalido" type="text" name="Nome" id="Nome" placeholder="Nome completo*">
+            <p class="campo-ob valido invalido">campo obrigatório</p>
+            
+            <input type="text" name="E-mail" id="E-mail" placeholder="E-mail*">
+            <p class="campo-ob">campo obrigatório</p>
+            
+            <input type="text" name="Telefone" id="Telefone" placeholder="Telefone*">
+            <p class="campo-ob">campo obrigatório</p>
+            
+            <textarea name="Texto" cols="30" rows="10" id="Texto"></textarea>
+            <p class="text valido invalido">campo obrigatório</p>
+            
+            <p class="campos">*campos obrigatórios</p>
+            
+            <button class="botao">Enviar</button>
+        </form>
+    </div>
+    </main>
+
+    <script src="./src/JS/index.js"></script>
+</body>
+</html>

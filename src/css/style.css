@@ -1,0 +1,170 @@
+body{
+    font-family: "Roboto",sans-serif;
+}
+
+main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+.background{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+.sac{
+    height: 300px;
+    width: 500px;
+}
+.sac h1{
+    height: 46px;
+    width: 287px;
+    left: -361px;
+    top: -116px;
+    font-weight: 900;
+    font-size: 20px;
+    line-height: 23.44px;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+.sac p{
+    height: 54px;
+    width: 300px;
+    left: -361px;
+    margin-top: 11px;
+    top: -59px;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 18px;
+    text-align: left;
+    color: #fff;
+}
+
+.formulario form{
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    padding: 20px;
+}
+
+.formulario form input{
+    margin: 7px;
+    height: 35px;
+    width: 298px;
+    left: 20px;
+    top: -180px;
+    border-radius: 5px;
+    background: #FFFFFF;
+    border: 1px solid #000000;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 18px;
+    color: #a8a8a8;
+    text-indent: 10px;
+        
+}
+
+.formulario .campo-ob  {
+    margin-left: 8px;
+    font-size: 8px;
+    font-weight: 400;
+    line-height: 9px;
+    text-align: left;
+    position: relative;
+    display: inline-block;
+    top: -7px;
+    visibility: hidden;
+}
+
+.formulario .text {
+    margin-left: 8px;
+    font-size: 8px;
+    font-weight: 400;
+    line-height: 9px;
+    text-align: left;
+    position: relative;
+    display: inline-block;
+    top: 0px;
+    visibility: hidden;
+}
+
+
+
+.formulario textarea{
+    height: 100px;
+    width: 298px;
+    margin-left: 8px;
+    margin-top: 8px;
+    top: 344px;
+    border-radius: 5px;
+    background: #FFFFFF;
+    border: 1px solid #000;
+    color: #a8a8a8;
+    resize: none;
+}
+
+.formulario .campos{
+    margin-top: 8px;
+    margin-bottom: 20px;
+    font-family: Roboto;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 18px;
+    text-align: left;
+
+}
+
+.formulario .botao{
+    margin-left: 8px;
+    height: 41px;
+    width: 298px;
+    left: 17px;
+    top: 925px;
+    border-radius: 5px;
+    background: #3CCC87;
+    border: none;
+    color: #fff ;
+    text-indent: 10px;
+
+}
+
+/*Estilo caso o formulario seja valido*/
+
+.formulario input .valido {
+    border: 1px solid #00C22B;
+    display: block;
+}
+
+.formulario .campo-ob.valido {
+    color: #00C22B;
+    display: block;
+}
+
+.formulario .text.valido{
+    color: #00C22B;
+    display: block;
+}
+
+
+/*Estilo caso o formulario seja invalido*/
+
+.formulario input .invalido {
+    border: 1px solid #F52E2E;
+    display: block;
+}
+
+.formulario .campo-ob.invalido{
+    color: #F52E2E;
+    display: block;
+}
+
+.formulario .text.invalido{
+    color: #F52E2E;
+    display: block;
+}
