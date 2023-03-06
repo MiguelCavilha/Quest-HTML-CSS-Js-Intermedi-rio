@@ -1,14 +1,30 @@
-const areaInputs = document.querySelectorAll ("input");
-console.log(areaInputs)
+const inputsFormulario = document.querySelectorAll(".input")
 
-const areaTexto = document.querySelector ("textarea");
-console.log(areaTexto)
+const confirmarBotao = document.querySelector("button")
+const form = document.getElementById("form")
 
-const confirmarBotao = document.querySelector ("button");
-console.log(confirmarBotao)
+confirmarBotao.addEventListener("click", () =>{
+
+    form.addEventListener("submit", (e)=>{
+        e.preventDefault();
 
 
+    })
 
-confirmarBotao.addEventListener("click", function (){
-       
+    inputsFormulario.forEach((input) => {
+
+        const campoOb =
+            input.parentElement.querySelector(".campo-ob");
+
+        if(!input.value) {
+            input.classList.add("invalido");
+            campoOb.innerHTML = "campo obrigatório";
+            
+        } else {
+            input.classList.remove("invalido");
+            campoOb.style.display = "block"
+        }
+    })
 })
+
+ 

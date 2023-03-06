@@ -50,10 +50,12 @@ main{
     flex-direction: column;
     background-color: #fff;
     padding: 20px;
+    
 }
 
-.formulario form input{
+.formulario form .input{
     margin: 7px;
+    margin-bottom: 15px;
     height: 35px;
     width: 298px;
     left: 20px;
@@ -70,33 +72,8 @@ main{
         
 }
 
-.formulario .campo-ob  {
-    margin-left: 8px;
-    font-size: 8px;
-    font-weight: 400;
-    line-height: 9px;
-    text-align: left;
-    position: relative;
-    display: inline-block;
-    top: -7px;
-    visibility: hidden;
-}
 
-.formulario .text {
-    margin-left: 8px;
-    font-size: 8px;
-    font-weight: 400;
-    line-height: 9px;
-    text-align: left;
-    position: relative;
-    display: inline-block;
-    top: 0px;
-    visibility: hidden;
-}
-
-
-
-.formulario textarea{
+.formulario textarea.input{
     height: 100px;
     width: 298px;
     margin-left: 8px;
@@ -134,37 +111,28 @@ main{
 
 }
 
-/*Estilo caso o formulario seja valido*/
-
-.formulario input .valido {
-    border: 1px solid #00C22B;
-    display: block;
-}
-
-.formulario .campo-ob.valido {
-    color: #00C22B;
-    display: block;
-}
-
-.formulario .text.valido{
-    color: #00C22B;
-    display: block;
-}
-
-
 /*Estilo caso o formulario seja invalido*/
 
-.formulario input .invalido {
+.formulario .input.invalido {
     border: 1px solid #F52E2E;
-    display: block;
 }
 
-.formulario .campo-ob.invalido{
+.campo-ob  {
+    margin-left: 8px;
+    font-size: 8px;
+    font-weight: 400;
+    line-height: 9px;
+    text-align: left;
+    position:relative;
+    display: inline-block;
+    top: -14px;
     color: #F52E2E;
-    display: block;
 }
 
-.formulario .text.invalido{
-    color: #F52E2E;
-    display: block;
+
+
+/*Estilo caso o formulario seja valido*/
+.formulario .input.valido {
+    border: 1px solid #00C22B;
 }
+
