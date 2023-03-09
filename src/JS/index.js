@@ -13,8 +13,7 @@ confirmarBotao.addEventListener("click", () =>{
 
     inputsFormulario.forEach((input) => {
 
-        const campoOb =
-            input.parentElement.querySelector(".campo-ob");
+        const campoObs = input.parentElement.querySelectorAll(".campo-ob");
 
         if(!input.value) {
             input.classList.add("invalido");
