@@ -1,8 +1,8 @@
    Este foi um projeto desenvolvido durante o curso DEVQuest, na qual o objetivo era criar um formulário com validação, de forma que quando o 
    campo estiver vazio, ele retorne bordas vermelhas nas inputs e mostre a mensagem "campo obrigatório" para o usuário.
 
-  (https://github.com/MiguelCavilha/Quest-HTML-CSS-Js-Intermediario/blob/main/src/Imagem/campos-obrigat%C3%B3rios.png)
+  !(https://github.com/MiguelCavilha/Quest-HTML-CSS-Js-Intermediario/blob/main/src/Imagem/campos-obrigat%C3%B3rios.png)
    
    Porém, caso os campos estiverem preenchidos, os campos ficam verdes indicando que está tudo certo.
    
-   (https://github.com/MiguelCavilha/Quest-HTML-CSS-Js-Intermediario/blob/main/src/Imagem/tudo-certo.png)
+   !(https://github.com/MiguelCavilha/Quest-HTML-CSS-Js-Intermediario/blob/main/src/Imagem/tudo-certo.png)
