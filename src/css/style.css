@@ -1,26 +1,23 @@
-body{
-    font-family: "Roboto",sans-serif;
+body {
+    font-family: "Roboto", sans-serif;
+    background-image: url(../Imagem/bg-repeat.jpg);
+    background-size: contain;
+
 }
 
-main{
+main {
     display: flex;
     align-items: center;
     justify-content: center;
     min-height: 100vh;
 }
 
-.background{
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    z-index: -1;
-}
-
-.sac{
+.sac {
     height: 300px;
     width: 500px;
 }
-.sac h1{
+
+.sac h1 {
     height: 46px;
     width: 287px;
     left: -361px;
@@ -32,7 +29,7 @@ main{
     text-transform: uppercase;
 }
 
-.sac p{
+.sac p {
     height: 54px;
     width: 300px;
     left: -361px;
@@ -45,15 +42,15 @@ main{
     color: #fff;
 }
 
-.formulario form{
+.formulario form {
     display: flex;
     flex-direction: column;
     background-color: #fff;
     padding: 20px;
-    
+
 }
 
-.formulario form .input{
+.formulario form .input {
     margin: 7px;
     margin-bottom: 15px;
     height: 35px;
@@ -69,11 +66,11 @@ main{
     line-height: 18px;
     color: #a8a8a8;
     text-indent: 10px;
-        
+
 }
 
 
-.formulario textarea.input{
+.formulario textarea.input {
     height: 100px;
     width: 298px;
     margin-left: 8px;
@@ -86,7 +83,7 @@ main{
     resize: none;
 }
 
-.formulario .campos{
+.formulario .campos {
     margin-top: 8px;
     margin-bottom: 20px;
     font-family: Roboto;
@@ -97,7 +94,7 @@ main{
 
 }
 
-.formulario .botao{
+.formulario .botao {
     margin-left: 8px;
     height: 41px;
     width: 298px;
@@ -106,8 +103,9 @@ main{
     border-radius: 5px;
     background: #3CCC87;
     border: none;
-    color: #fff ;
+    color: #fff;
     text-indent: 10px;
+    cursor: pointer;
 
 }
 
@@ -117,16 +115,17 @@ main{
     border: 1px solid #F52E2E;
 }
 
-.campo-ob  {
+.campo-ob {
     margin-left: 8px;
     font-size: 8px;
     font-weight: 400;
     line-height: 9px;
     text-align: left;
-    position:relative;
+    position: relative;
     display: inline-block;
     top: -14px;
     color: #F52E2E;
+    display: none;
 }
 
 
@@ -135,4 +134,3 @@ main{
 .formulario .input.valido {
     border: 1px solid #00C22B;
 }
-

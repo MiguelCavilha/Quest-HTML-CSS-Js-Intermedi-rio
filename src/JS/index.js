@@ -1,36 +1,30 @@
 const inputsFormulario = document.querySelectorAll(".input")
-
 const confirmarBotao = document.querySelector("button")
-const form = document.getElementById("form")
 
-confirmarBotao.addEventListener("click", () =>{
+confirmarBotao.addEventListener("click", (e) => {
+    e.preventDefault()
 
-    form.addEventListener("submit", (e)=>{
-        e.preventDefault();
-
-        
-
-    })
+   
 
     inputsFormulario.forEach((input) => {
 
-        const campoOb = 
-        input.nextElementSibling;
+        const campoOb =
+            input.nextElementSibling;
 
-        if(!input.value) {
+        if (input.value==="") {
             input.classList.add("invalido");
-            campoOb.innerHTML = "campo obrigatório";
-    
+            campoOb.style.display = "block";
+
         } else {
             input.classList.remove("invalido");
-            campoOb.style.display = "none"
+            campoOb.style.display = "none";
         }
     })
 
     inputsFormulario.forEach((input) => {
 
 
-        if(!input.value) {
+        if (!input.value) {
             input.classList.remove("valido");
     
         } else {
@@ -38,9 +32,8 @@ confirmarBotao.addEventListener("click", () =>{
         }
     })
 
-    
+
 
 
 })
 
- 
